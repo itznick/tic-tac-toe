@@ -289,7 +289,7 @@ const startGame = () => {
 }
 
 gameBoxes.forEach((box) => {
-    box.addEventListener("click", handleBoxClick)
+    box.addEventListener("click", handleBoxClick);
 })
 
 startGameButton.addEventListener('click', startGame);
