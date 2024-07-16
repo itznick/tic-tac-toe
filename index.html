@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body class="bg-zinc-900">
+    <div id="loading-screen" class="loading-screen h-screen flex justify-center items-center flex-col">
+        <h1 class="welcome-message text-white text-2xl font-base">Welcome to Tic Tac Toe</h1>
+        <div class="my-6">
+            <button id="start-game-button" class="font-base rounded-md p-3 bg-white">Start Game</button>
+        </div>
+        <span class="footer-text text-white font-base text-sm absolute bottom-6">Made with ❤️ By Nikhil</span>
+    </div>
+    <div id="game-container" class="container h-full w-full hidden">
+        <main>
+            <header class="header h-16 w-screen flex justify-between items-center text-xl bg-purple-500">
+                <div class="ml-2">
+                    <h1 class="logo-text text-white font-base font-semibold whitespace-nowrap">Tic Tac Toe</h1>
+                </div>
+                <div class="mr-2">
+                    <button
+                        class="new__game-button font-base text-base bg-white rounded-md p-1.5 text-zinc-900 whitespace-nowrap opacity-85">New
+                        Game</button>
+                </div>
+            </header>
+            <div class="w-screen mt-6 flex justify-center items-center flex-col">
+                <section class="result w-full h-16 hidden items-center justify-center">
+                    <span class="result__text font-base text-2xl text-white font-bold"></span>
+                </section>
+                <section class="w-full h-full flex justify-evenly items-center p-2">
+                    <div class="info__turn w-36 p-4 text-center">
+                        <span class="text-white text-sm font-base">TURN</span>
+                        <div class="info__turn-icons mt-2 flex justify-center bg-yellow-300">
+                            <div class="w-full h-10 flex items-center justify-center bg-purple-500">
+                                <span class="info__turn-x text-white text-lg font-base font-semibold">X</span>
+                            </div>
+                            <div class="w-full h-10 flex items-center justify-center bg-purple-400">
+                                <span class="info__turn-o text-black text-lg font-base font-semibold">O</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__score w-36 p-4 text-center ">
+                        <span class="text-white text-sm font-base">SCORE</span>
+                        <div class="info__score-icons mt-2 flex justify-center bg-yellow-300">
+                            <div class="w-full h-10 flex items-center justify-center bg-purple-500">
+                                <span class="info__score-x text-white text-lg font-base font-semibold">0</span>
+                            </div>
+                            <div class="w-full h-10 flex items-center justify-center bg-purple-400">
+                                <span class="info__score-o text-black text-lg font-base font-semibold">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="game h-80 w-full flex items-center justify-center">
+                    <div class="game__board grid grid-cols-3 gap-2">
+                        <button
+                            class="game__box h-20 w-20 font-base p-2 text-2xl font-semibold bg-white opacity-85"></button>
+                        <button
+                            class="game__box h-20 w-20 font-base p-2 text-2xl font-semibold bg-white opacity-85"></button>
+                        <button
+                            class="game__box h-20 w-20 font-base p-2 text-2xl font-semibold bg-white opacity-85"></button>
+                        <button
+                            class="game__box h-20 w-20 font-base p-2 text-2xl font-semibold bg-white opacity-85"></button>
+                        <button
+                            class="game__box h-20 w-20 font-base p-2 text-2xl font-semibold bg-white opacity-85"></button>
+                        <button
+                            class="game__box h-20 w-20 font-base p-2 text-2xl font-semibold bg-white opacity-85"></button>
+                        <button
+                            class="game__box h-20 w-20 font-base p-2 text-2xl font-semibold bg-white opacity-85"></button>
+                        <button
+                            class="game__box h-20 w-20 font-base p-2 text-2xl font-semibold bg-white opacity-85"></button>
+                        <button
+                            class="game__box h-20 w-20 font-base p-2 text-2xl font-semibold bg-white opacity-85"></button>
+                    </div>
+                </section>
+                <section>
+                    <button
+                        class="info__reset-button font-base text-base bg-white rounded-md p-1.5 text-zinc-900 whitespace-nowrap opacity-85">Reset
+                        Game</button>
+                </section>
+            </div>
+            <footer class="flex items-center justify-center h-full mt-14">
+                <span class="text-white font-base text-sm absolute bottom-4">Made with ❤️ By Nikhil</span>
+            </footer>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/js/game.js"></script>
+
+</body>
+
+</html>
