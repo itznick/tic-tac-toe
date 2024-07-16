@@ -5,6 +5,7 @@ Welcome to the Tic Tac Toe game, a classic two-player game built using HTML, CSS
 ## Table of Contents
 
 - [Demo](#demo)
+- [Screenshots](#screenshots)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
@@ -18,6 +19,20 @@ Welcome to the Tic Tac Toe game, a classic two-player game built using HTML, CSS
 ## Demo
 
 You can see the live demo of the game [here](https://playtactoe.netlify.app).
+
+## Screenshots
+
+_Welcome Screen with Start Game Button_
+![Welcome Screen](./screenshots/Welcome%20Screen.png)
+
+_Gameplay Screen with Tic Tac Toe Board_
+![Gameplay Screen](./screenshots/Gameplay%20Screen.png)
+
+_Result Screen Showing Winner or Draw_
+![Result Screen](./screenshots/Result%20Screen.png)
+
+_Mobile Responsive Design Example_
+![Mobile Responsive Screen](./screenshots/Mobile%20Responsive%20Screen.png)
 
 ## Features
 
